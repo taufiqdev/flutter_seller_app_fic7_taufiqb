@@ -80,7 +80,7 @@ class _AllProductWidgetState extends State<AllProductWidget> {
                         offset: 3,
                         onPaginate: (int? offset) async {},
                         itemView: ListView.builder(
-                          itemCount: 20,
+                          itemCount: data.data.length,
                           padding: const EdgeInsets.all(0),
                           physics: const NeverScrollableScrollPhysics(),
                           shrinkWrap: true,
@@ -111,9 +111,9 @@ class _AllProductWidgetState extends State<AllProductWidget> {
                     style: robotoRegular.copyWith(),
                   ),
                   onPress: () {
-                    /* Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_) {
                       return const SellerAddProductPage();
-                    })); */
+                    }));
                   },
                   animateIcon: true,
                   inverted: false,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_seller_app/bloc/add_image/add_image_bloc.dart';
+import 'package:flutter_seller_app/bloc/add_product/add_product_bloc.dart';
 import 'package:flutter_seller_app/bloc/categories/categories_bloc.dart';
 
 import 'bloc/login/login_bloc.dart';
@@ -52,6 +54,12 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => CategoriesBloc(),
         ),
+        BlocProvider(
+          create: (context) => AddImageBloc(),
+        ),
+        BlocProvider(
+          create: (context) => AddProductBloc(),
+        ),
         /* BlocProvider(
           create: (context) => ProductsBloc(),
         ),
@@ -70,7 +78,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Seller App Taufiq',
         /* theme: ThemeData(
                 primarySwatch: Colors.blue,
               ), */

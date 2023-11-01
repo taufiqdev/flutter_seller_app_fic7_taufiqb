@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../utils/images.dart';
 import '../seller_home/seller_home_page.dart';
-import '../seller_product/seller_add_product_page.dart';
+import '../seller_product/seller_product_page.dart';
 
 class SellerDashboardPage extends StatefulWidget {
   const SellerDashboardPage({super.key});
@@ -82,7 +82,7 @@ class _HomePageState extends State<SellerDashboardPage> {
     if (!isSingleVendor) {
       list.add(_barItem(Images.homeImage, 'Home', 0));
 
-      list.add(_barItem(Images.shoppingImage, 'Product', 1));
+      list.add(_barItem(Images.shoppingImage, 'Product1', 1));
 
       list.add(_barItem(Images.moreImage, 'More', 2));
     } else {
